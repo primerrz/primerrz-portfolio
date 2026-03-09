@@ -13,7 +13,7 @@ export default function ProjectCard({
     <div className="bg-zinc-900 rounded-xl overflow-hidden">
 
       <video
-        key={video1}
+        key={video2}
         autoPlay
         muted
         loop
