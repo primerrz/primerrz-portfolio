@@ -18,6 +18,7 @@ export default function ProjectCard({
         muted
         loop
         playsInline
+        preload="auto"
         className="w-full h-60 object-cover"
       >
         <source src={video1} type="video/mp4" />

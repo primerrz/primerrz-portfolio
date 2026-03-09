@@ -8,7 +8,7 @@ export default function Home() {
       <Navbar />
 
       {/*About Me*/}
-      <section id="about-me" className="h-screen flex flex-col justify-center items-center text-center px-6">
+      <section id="about-me" className="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
         <h1 className="text-5xl font-bold mb-6">
           Roblox Portfolio
         </h1>
