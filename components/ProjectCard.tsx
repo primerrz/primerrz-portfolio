@@ -1,22 +1,29 @@
 export default function ProjectCard({
   title,
   description,
-  video,
+  video1,
+  video2
 }: {
   title: string;
   description: string;
-  video: string;
+  video1: string;
+  video2: string;
 }) {
   return (
     <div className="bg-zinc-900 rounded-xl overflow-hidden">
 
       <video
-        src={video}
+        key={video1}
         autoPlay
         muted
         loop
+        playsInline
         className="w-full h-60 object-cover"
-      />
+      >
+        <source src={video1} type="video/mp4" />
+        <source src={video2} type="video/webm" />
+      </video>
+
 
       <div className="p-6">
 

@@ -60,25 +60,29 @@ export default function Home() {
           <ProjectCard
             title="Gameplay Systems"
             description="Implemented scalable gameplay features in Roblox using modular Luau scripts and built-in engine services such as physics and tweening."
-            video="/GameplaySystems1.mp4"
+            video1="/GameplaySystems1.mp4"
+            video2="/GameplaySystems1.webm"
           />
 
           <ProjectCard
             title="Frontend User Interface"
             description="Developed responsive in-game UI with Luau, connecting interface elements to gameplay events and player input to provide clear feedback and smooth interactions."
-            video="/UISystems1.mp4"
+            video1="/UISystems1.mp4"
+            video2="/UISystems1.webm"
           />
 
           <ProjectCard
             title="Animation and VFX"
             description="Created animations and visual effects that complement gameplay actions, helping communicate abilities, movement, and other events in a clear and visually polished way."
-            video="/VFXandAnimation1.mp4"
+            video1="/VFXandAnimation1.mp4"
+            video2="/VFXandAnimation1.webm"
           />
 
           <ProjectCard
             title="Player Data Systems"
             description="Built a player data systems using ProfileStore to save and load player progress, with autosaving and safeguards to help prevent data loss between sessions."
-            video="/DatastoreSystems1.mp4"
+            video1="/DatastoreSystems1.mp4"
+            video2="/DatastoreSystems1.webm"
           />
 
         </div>
