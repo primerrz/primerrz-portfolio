@@ -80,7 +80,7 @@ export default function Home() {
 
           <ProjectCard
             title="Player Data Systems"
-            description="Built a player data systems using ProfileStore to save and load player progress, with autosaving and safeguards to help prevent data loss between sessions."
+            description="Built player data systems using ProfileStore to save and load player progress, with autosaving and safeguards to help prevent data loss between sessions."
             video1="/DatastoreSystems1.mp4"
             video2="/DatastoreSystems1.webm"
           />

@@ -18,11 +18,11 @@ export default function ProjectCard({
         muted
         loop
         playsInline
-        preload="auto"
+        preload="metadata"
         className="w-full h-60 object-cover"
       >
-        <source src={video1} type="video/mp4" />
         <source src={video2} type="video/webm" />
+        <source src={video1} type="video/mp4" />
       </video>
 
 
