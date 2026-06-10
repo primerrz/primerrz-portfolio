@@ -1,30 +1,32 @@
 export default function ProjectCard({
   title,
   description,
-  video1,
-  video2
+  image,
+  href
 }: {
   title: string;
   description: string;
-  video1: string;
-  video2: string;
+  image: string;
+  href?: string;
 }) {
+  const imgEl = (
+    <img
+      src={image}
+      alt={title}
+      className="w-full h-60 object-cover"
+    />
+  );
+
   return (
     <div className="bg-zinc-900 rounded-xl overflow-hidden">
 
-      <video
-        key={video2}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        className="w-full h-60 object-cover"
-      >
-        <source src={video2} type="video/webm" />
-        <source src={video1} type="video/mp4" />
-      </video>
-
+      {href ? (
+        <a href={href} target="_blank" rel="noopener noreferrer" className="block">
+          {imgEl}
+        </a>
+      ) : (
+        imgEl
+      )}
 
       <div className="p-6">
 
@@ -39,5 +41,5 @@ export default function ProjectCard({
       </div>
 
     </div>
-  )
+  );
 }

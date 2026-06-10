@@ -1,3 +1,4 @@
+import SkillCard from "@/components/SkillCard"
 import Navbar from "../components/Navbar"
 import ProjectCard from "../components/ProjectCard"
 
@@ -34,7 +35,7 @@ export default function Home() {
         </ul>
 
         <p className="text-zinc-300 max-w-xl">
-          Many of the projects I am working on have yet to be released, but below you can find a selection of work that demonstrates my development approach, technical experience, and the types of systems I build.
+          I have worked on numerous experiences, including creating my own project, APPLE JUMP, and am currently developing several other projects.
         </p>
 
         <div className="mt-8 flex gap-4">
@@ -49,36 +50,36 @@ export default function Home() {
 
 
       {/* Projects */}
-      <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
+      <section id="skills" className="max-w-6xl mx-auto px-6 py-20">
 
         <h2 className="text-3xl font-semibold mb-12">
-          Featured Projects
+          Featured Skills
         </h2>
 
         <div className="grid md:grid-cols-2 gap-10">
 
-          <ProjectCard
+          <SkillCard
             title="Gameplay Systems"
             description="Implemented scalable gameplay features in Roblox using modular Luau scripts and built-in engine services such as physics and tweening."
             video1="/GameplaySystems1.mp4"
             video2="/GameplaySystems1.webm"
           />
 
-          <ProjectCard
+          <SkillCard
             title="Frontend User Interface"
             description="Developed responsive in-game UI with Luau, connecting interface elements to gameplay events and player input to provide clear feedback and smooth interactions."
             video1="/UISystems1.mp4"
             video2="/UISystems1.webm"
           />
 
-          <ProjectCard
+          <SkillCard
             title="Animation and VFX"
             description="Created animations and visual effects that complement gameplay actions, helping communicate abilities, movement, and other events in a clear and visually polished way."
             video1="/VFXandAnimation1.mp4"
             video2="/VFXandAnimation1.webm"
           />
 
-          <ProjectCard
+          <SkillCard
             title="Player Data Systems"
             description="Built player data systems using ProfileStore to save and load player progress, with autosaving and safeguards to help prevent data loss between sessions."
             video1="/DatastoreSystems1.mp4"
@@ -89,6 +90,26 @@ export default function Home() {
 
       </section>
 
+
+       {/* Projects */}
+      <section id="projects" className="max-w-6xl mx-auto px-6 py-20">
+
+        <h2 className="text-3xl font-semibold mb-12">
+          Projects
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-10">
+
+          <ProjectCard
+            title="APPLE JUMP"
+            description="A round-based multiplayer platformer where players must escape rising waters by bouncing on platforms."
+            image = "/AppleJumpArt.png"
+            href = "https://www.roblox.com/games/128152289992090/APPLE-JUMP"
+          />
+
+        </div>
+        
+      </section>
 
       {/* Contact */}
       <section id="contact" className="py-20 text-center">
